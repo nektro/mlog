@@ -46,3 +46,7 @@ services:
       VIRTUAL_HOST: example.com
       LETSENCRYPT_HOST: example.com
 ```
+
+Sources:
+- https://github.com/nginx-proxy/nginx-proxy
+- https://github.com/nginx-proxy/docker-letsencrypt-nginx-proxy-companion

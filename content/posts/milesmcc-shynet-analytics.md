@@ -30,3 +30,6 @@ Then,
 - `docker-compose exec analytics ./manage.py hostname analytics.example.com`
 
 - `docker-compose exec analytics ./manage.py whitelabel "My Shynet Analytics"`
+
+Sources:
+- https://github.com/milesmcc/shynet
