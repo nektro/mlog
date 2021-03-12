@@ -9,7 +9,7 @@ Run
 $ sudo dmesg | grep 'firmware load for' | grep 'failed with error'
 ```
 
-This will search your diagnostic kernel logs for failed kernel logs and will produce lines that look similar to the following
+This will search your diagnostic kernel logs for failed attempted firmware loads and will produce lines that look similar to the following
 
 ```
 [   53.168802] bluetooth hci0: Direct firmware load for qca/rampatch_usb_00000200.bin failed with error -2
