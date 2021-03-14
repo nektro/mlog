@@ -25,7 +25,7 @@ Then,
 
 - `docker-compose exec analytics ./manage.py registeradmin hi@my.domain.com`
     - This will print the password to the console.
-    - More users can be added by visiting `https://example.com/admin/core/user/add/` or adding `ACCOUNT_SIGNUPS_ENABLED: False`
+    - More users can be added by visiting `https://example.com/admin/core/user/add/` or adding `ACCOUNT_SIGNUPS_ENABLED: True`
 
 - `docker-compose exec analytics ./manage.py hostname analytics.example.com`
 
