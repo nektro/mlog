@@ -7,6 +7,7 @@ Run
 
 ```sh
 $ sudo dmesg | grep 'firmware load for' | grep 'failed with error'
+$ sudo dmesg | grep 'firmware: failed to load'
 ```
 
 This will search your diagnostic kernel logs for failed firmware loads and will produce lines that look similar to the following
