@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://mlog.nektro.net/"
 languageCode = "en-us"
 title = "Meghan's Log"
 theme = "papermod"
