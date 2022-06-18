@@ -1,6 +1,6 @@
 ---
 title: "I've Switched to NixOS"
-date: 2022-01-18T02:54:09-08:00
+date: 2022-06-18T02:54:09-08:00
 ---
 
 The original creation date on this article is 17 Jan 2022 and I've been running NixOS 21.05 since then. Previously I'd been running a mix of Debian and Ubuntu and I don't think I'll be switching back anytime soon. Granted, I have not officially performed an update in that time, though I do not suspect it going badly in the ways that other distributions have bricked my Linux installs in the past.
