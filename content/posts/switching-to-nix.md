@@ -3,9 +3,9 @@ title: "I've Switched to NixOS"
 date: 2022-01-18T02:54:09-08:00
 ---
 
-The original creation date on this article is 17 Jan 2022 and I've been running NixOS 21.05 since then. Previously I'd been running a mix of Debian and Ubuntu and I don't think I'll be switching back anytime soon. Granted, I have not officially performed an update in that time, though I do not suspect it going badly in the ways that other distrobutions have bricked my Linux installs in the past.
+The original creation date on this article is 17 Jan 2022 and I've been running NixOS 21.05 since then. Previously I'd been running a mix of Debian and Ubuntu and I don't think I'll be switching back anytime soon. Granted, I have not officially performed an update in that time, though I do not suspect it going badly in the ways that other distributions have bricked my Linux installs in the past.
 
-While only time will tell how long NixOS will stay with us, the ideas it brings to system management are incredible and I hope they stay around. I can confidently say that the system update to Nix 22.05 because I've already gotten my system to a brick-like state and recovered it in the past with ease.
+While only time will tell how long NixOS will stay with us, the ideas it brings to system management are incredible and I hope they stay around. I can confidently say that the system update to Nix 22.05 will likely go smoothly because I've already gotten my system to a brick-like state and recovered it in the past with ease.
 
 NixOS is built on top of a custom purely functional programming language and interpreter aptly named Nix. In a system, the base file (which rarely ever needs to be changed beyond the initial setup) is `/etc/nixos/configuration.nix`. Mine is as follows (with a few comments removed for brevity):
 
@@ -72,7 +72,7 @@ NixOS is built on top of a custom purely functional programming language and int
 }
 ```
 
-Most of this file isn't too consequential, it setups my hardware are i3 window manager configuration, as well as my user and system services. I do want to bring our attention to one section in particular though that sets up my user account,
+Most of this file isn't too consequential, it setups my hardware and i3 window manager configuration, as well as my user and system services. I do want to bring our attention to one section in particular though that sets up my user account,
 
 ```nix
   users.users.meghan = {
@@ -101,8 +101,9 @@ So my solution here was to reboot again and simply select the previous generatio
 Between that, and the perfect dependency management solution `shell.nix` brings to app development, I'm definitely a fan.
 
 Some other must-have commands that make my Nix workflow an ease:
-    - `nix-collect-garbage`
-    - `nix-locate`
+
+- `nix-collect-garbage`
+- `nix-locate`
 
 I'll be sure to post an update once I boot into 22.05 for the first time.
 
