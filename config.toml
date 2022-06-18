@@ -6,7 +6,7 @@ theme = "papermod"
 [params.homeInfoParams]
 Title = "Welcome to my blog!"
 Content = """
-- Hi! I'm Meghan, and I'm a 24yo trans fem poly lesbian anarchist that writes code by day and writes some more by night but people are what really makes me happy.
+- Hi! I'm Meghan, and I'm a 25yo trans fem poly lesbian anarchist that writes code by day and writes some more by night but people are what really makes me happy.
 - Here you'll find some thoughts on things and obscure scripts that I helpful to me so I thought might be helpful to others.
 - The source of this blog, like many of my projects, is open and built with: my brain, Hugo, and hours of searching on Google and Stack Exchange to give you articles with all the answers I found. The source for this blob is available here https://github.com/nektro/mlog.
 -
