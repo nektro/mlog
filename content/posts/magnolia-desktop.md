@@ -79,7 +79,7 @@ total 1.1M
 -rwxr-xr-x 1 meg users  19K Jun 18 17:28 magnolia-triangle-raw
 ```
 
-This ease of building from source is another key requirement for this project that Zig provides for us, because prior to Magnolia apps becoming properly available on the different package repositories for the various distributions, building from source will likely be the only way for many users to get to experience these apps. Pre-packaging distribution-agnostic graphical applications on Linux is a not very solved problem. Some solutions are hacky, and some lead to the bloat mentioned in the post above about Flatpack. A good primer on this topic (which was actually unknown to me for quite some time) is [this video](https://youtu.be/pq1XqP4-qOo?t=95) by Andrew Kelley, who happens to be the creator of Zig.
+This ease of building from source is another key requirement for this project that Zig provides for us, because prior to Magnolia apps becoming properly available on the different package repositories for the various distributions, building from source will likely be the only way for many users to get to experience these apps. Pre-packaging distribution-agnostic graphical applications on Linux is a not very solved problem. Some solutions are hacky, and some lead to the bloat mentioned in the post above about Flatpack. A good primer on this topic (which was actually unknown to me for quite some time) is [this video](https://youtu.be/pq1XqP4-qOo?t=95) by Andrew Kelley, the creator of Zig.
 
 There's much on the horizon. Immediately so, there's icons, more text work, more styling demos, and the beginnings of a calculator, filebrowser, and system resource monitor.
 
@@ -88,3 +88,5 @@ Well that's all I have for today, stay tuned!
 If you'd like to follow along check back here or read more of my source on Github https://github.com/nektro/magnolia-desktop or Sourcehut https://git.sr.ht/~nektro/magnolia-desktop.
 
 I also have a [Twitter thread](https://twitter.com/nektro/status/1520549224907124736) and am on [Github Sponsors](https://github.com/sponsors/nektro) if you'd like to support my work.
+
+Thanks for reading! :D
