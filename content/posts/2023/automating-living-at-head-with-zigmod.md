@@ -3,7 +3,7 @@ title: "Automating Living at Head With Zigmod"
 date: 2023-08-01T20:48:36-07:00
 ---
 
-So what is "living at HEAD" ? Living at HEAD is the idea that at all times when working on a project there only exists a single version of all of your dependencies, regardless of depth. On top of that, you work towards keeping this single version of each of your dependencies as closest to the most recent version available as possible. Now I will admit that achieving this can require quite a bit of work but if the tools you use are working with you towards this goal rather than against you, the benefits of numerous.
+So what is "living at HEAD" ? Living at HEAD is the idea that at all times when working on a project there only exists a single version of all of your dependencies, regardless of depth. On top of that, you work towards keeping this single version of each of your dependencies as closest to the most recent version available as possible. Now I will admit that achieving this can require quite a bit of work but if the tools you use are working with you towards this goal rather than against you, the benefits are numerous.
 
 I forgot where I had heard about this concept originally, but in the time since I've become more than sold on the idea. When originally researching for this article I came across this particular phrasing of the method from Abseil[1]'s philosophy page where they dedicate a whole section to describing the benefits they've seen from using this methodology on over 250M lines of C++ at Google. Furthermore, GitHub uses it to keep their Ruby on Rails monolith up to date[3].
 
