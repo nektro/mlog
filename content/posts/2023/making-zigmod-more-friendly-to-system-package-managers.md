@@ -15,18 +15,18 @@ To this end, I am proposing Zigmod begins to support `ZIGMOD_SEARCH_PATH` which 
 
 This will be a quite a non-invasive change for nearly all regular users of Zigmod and many of its other philosophies already work exceptionally well towards this goal.
 
-- Zigmod expects to [build at HEAD](https://mlog.nektro.net/posts/2023/automating-living-at-head-with-zigmod/) and globally(per compilation) deduplicates dependencies so only one package per source dependency should be needed. This makes it easy for system maintainers to ensure that local patches to Zigmod-enabled source patches are picked up by all dependants.
+- Zigmod expects to [build at HEAD](https://mlog.nektro.net/posts/2023/automating-living-at-head-with-zigmod/) and globally(per compilation) deduplicates dependencies so only one package per source dependency should be needed. This makes it easy for system maintainers to ensure that local patches to Zigmod-enabled source packages are picked up by all dependants.
 - Package [IDs](https://github.com/nektro/zigmod/blob/master/docs/zig.mod.md#id) are already in place and the ability to replace packages with ones farther down the tree by matching its ID has been an intentional feature since Zigmod's inception.
 
 One further change that will be necessary to make this all work is launching a v3 of the `zigmod.lock` format that matches source URLs to their package IDs. Presently the deduplication of packages is done as mentioned above but the ID found at a URL is not known until it is downloaded. To ensure that Zigmod is able to know what to look for when the network is disabled, the package ID must be cached locally, namely in the lock file.
 
 ## When?
 
-This upgrade will be coming to a Zigmod-near-you in a release after from the one the imminent one that brings the initial update to Zig 0.11, and will also be compatible with Zig 0.11.
+This upgrade will be coming to a Zigmod-near-you in a release after the imminent one that brings the initial update to Zig 0.11, and will also be compatible with Zig 0.11.
 
 ## Further Questions
 
-Currently the only open question is how to handle Zigmod packages that link C code using the `c_source_files` family of attributes. Should the spec change to allow choosing between vendored C code or a call to `linkSystemLibrary()` in `build.zig`? Or should it be left alone since the declarative nature of `zigmod.yml` allows it to be trivially patchable to instead use `- src: system_lib foo`?
+Currently the only open question is how to handle Zigmod packages that link C code using the `c_source_files` family of attributes. Should the manifest change to allow choosing between vendored C code or a call to `linkSystemLibrary()` in `build.zig`? Or should it be left alone since the declarative nature of `zigmod.yml` allows it to be trivially patchable to instead use `- src: system_lib foo`?
 
 ## Feedback
 
