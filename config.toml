@@ -6,7 +6,7 @@ theme = "papermod"
 [params.homeInfoParams]
 Title = "Welcome to my blog!"
 Content = """
-- Hi! I'm Meghan, and I'm a 26yo trans fem software engineer that writes code by day and writes some more by night but people are what really make me happy.
+- Hi! I'm Meghan, and I'm a 27yo trans fem software engineer that writes code by day and writes some more by night but people are what really make me happy.
 - Here you'll find some thoughts on things and obscure scripts that I find helpful to me so I thought might be helpful to others.
 - The source of this blog, like many of my projects, is open and available here https://github.com/nektro/mlog.
 -
