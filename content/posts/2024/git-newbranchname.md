@@ -3,12 +3,12 @@ title: "git-newbranchname"
 date: 2024-06-19T18:03:21-07:00
 ---
 
-As an avid contriubtor to open source, both in my open repositories and others', I interact with Git a lot and need to submit changes to those projects. If one such
+As an avid contriubtor to open source, both in my own repositories and others', I interact with Git a lot and need to submit changes to those projects. If one such
 project happens to be on GitHub, then those changes need to go in a standalone branch before submission.
 
 For single file changes the GitHub on-site editor is often sufficient however the branch name will be something like `patch-1`, `patch-2`, etc and incrementing up as you
-make more. However this naming scheme can be confusing because should you end up needing to checkout the changes locally it will create a branch with that name and then
-once the branch is merged upstream it will be deleted from origin but not your local checkout. This then leads to a confusing situation where you make another patch and
+make more. However this naming scheme can be confusing because in the event you end up needing to checkout the changes locally it will create a branch with that name and then
+once the branch is merged upstream it will be deleted from origin but not your local checkout. This then leads to a confusing situation where when you make another patch and
 the branch name given by GitHub is yet again `patch-1`.
 
 As a result I started generating my own branch names like so:
