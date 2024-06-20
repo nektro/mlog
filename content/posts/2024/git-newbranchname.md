@@ -1,5 +1,5 @@
 ---
-title: "git-newbranchname.md"
+title: "git-newbranchname"
 date: 2024-06-19T18:03:21-07:00
 ---
 
