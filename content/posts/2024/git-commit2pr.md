@@ -1,6 +1,6 @@
 ---
 title: "git-commit2pr"
-date: 2024-06-20T14:37:41-07:00
+date: 2024-06-24T20:08:08-07:00
 ---
 
 As an avid contriubtor to open source, both in my own repositories and others', I interact with Git a lot and need to submit changes to those projects. If one such project happens to be on GitHub, then those changes need to go in a standalone branch before submission.
