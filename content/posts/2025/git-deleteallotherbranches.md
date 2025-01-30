@@ -1,6 +1,6 @@
 ---
 title: "git-deleteallotherbranches"
-date: 2025-01-30T02:34:020-07:00
+date: 2025-01-30T02:43:40-08:00
 ---
 
 As an avid contriubtor to open source, I accrue a lot of branches in my local Git repos.
