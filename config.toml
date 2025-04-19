@@ -6,4 +6,12 @@ theme = "papermod"
 [params.homeInfoParams]
 Title = "Welcome to my blog!"
 Content = """
+- Hi! I'm Meghan, and I'm a 28yo trans software engineer living in the USA that writes code by day and writes some more by night but people are what really makes me happy.
+-
+- If you'd like more from me, I can be found in a variety of places around the Web:
+- https://github.com/nektro
+- https://sr.ht/~nektro/
+- https://bsky.app/profile/nektro.bsky.social
+- https://twitch.tv/nektro77
+- hello@nektro.net
 """
