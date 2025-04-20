@@ -60,7 +60,7 @@ details.m-usa-accordion {
 }
 ```
 
-You can also bring back the traditional `<details>` triangle if prefer to not use the `+` and `-` icons so show the open/close status like so:
+You can also bring back the traditional `<details>` triangle if prefer to not use the `+` and `-` icons to show the open/close status like so:
 
 ```diff
 @@ -2,12 +2,7 @@
