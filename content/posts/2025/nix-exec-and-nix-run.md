@@ -64,10 +64,10 @@ nix-run() {
 }
 ```
 
-Now if you run this with say `nix-run-old echo a b c` then you get an error like so:
+Now if you run this with say `nix-run echo a b c` then you get an error like so:
 
 ```
-[meghan@nixos:~]$ nix-run-old echo a b c
+$ nix-run echo a b c
 error:
 <snip>
        error: undefined variable 'echo'
@@ -100,7 +100,7 @@ error:
 ```
 
 This is great but as I hinted at earlier I like to use this while scripting. Consider the case where the argument we want to pass is not a literal. I use a compiled-from-source
-version of Zigmod so perhaps I want to run that in GDB and run `nix-run -- gdb $(which zigmod)`. With the version we just defined this unfortunately does not work:
+version of Zigmod so perhaps I want to run that in GDB and run `nix-run gdb $(which zigmod)`. With the version we just defined this unfortunately does not work:
 
 ```
 error: '--run' requires an argument
@@ -206,6 +206,6 @@ Reading symbols from /home/meghan/dev/zigmod/zig-out/bin/zigmod...
 ----
 
 After landing on the version above and telling some friends I was introduced to https://github.com/nix-community/comma. This is a great utility as well and I will
-definitely be adding it to my arsenel.
+definitely be adding it to my repertoire.
 
 Happy coding!
