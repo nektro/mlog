@@ -208,4 +208,24 @@ Reading symbols from /home/meghan/dev/zigmod/zig-out/bin/zigmod...
 After landing on the version above and telling some friends I was introduced to https://github.com/nix-community/comma. This is a great utility as well and I will
 definitely be adding it to my repertoire.
 
+----
+
+I still use this but going off of the experimental `nix run`, by switching the argument order this pattern can be simplified to be only one command and this is the version I use now.
+
+```sh
+thepkg="$1"
+shift
+thecmd="$1"
+shift
+
+[ "$thecmd" = "--" ] && thecmd="$thepkg"
+[ -z "$thecmd" ] && thecmd="$thepkg"
+
+nix-shell -p "$thepkg" --run "exit 0"
+[ "$?" != "0" ] && exit 1
+
+pkgpath=$(nix-which "$thepkg")
+"$pkgpath"/bin/"$thecmd" "$@"
+```
+
 Happy coding!
