@@ -1,0 +1,9 @@
+[build]
+base = "."
+publish = "public/"
+command = "hugo --gc --minify --buildFuture"
+
+[build.environment]
+HUGO_VERSION = "0.163.3"
+HUGO_ENV = "production"
+TZ = "America/Los_Angeles"
