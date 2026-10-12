@@ -41,4 +41,19 @@ Using `$0` and `mktemp` allows this method to be recursive such that Zig scripts
 
 `exit $?` forwards the `zig run` result to the parent environment.
 
+----
+
+TIL shebangs don't even need to be `#!`. This works too:
+
+```zig
+//usr/bin/env zig run $0 -- $@; exit
+
+const std = @import("std");
+
+pub fn main() !void {
+    std.log.info("hello world!", .{});
+    std.os.linux.exit(1);
+}
+```
+
 Happy coding!
