@@ -52,7 +52,6 @@ const std = @import("std");
 
 pub fn main() !void {
     std.log.info("hello world!", .{});
-    std.os.linux.exit(1);
 }
 ```
 
