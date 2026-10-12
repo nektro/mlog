@@ -43,7 +43,7 @@ Using `$0` and `mktemp` allows this method to be recursive such that Zig scripts
 
 ----
 
-TIL shebangs don't even need to be `#!`. This works too:
+Actually, you can take advantage of not needing a shebang and that Zig's comment syntax matches the path delimiter. This works too:
 
 ```zig
 //usr/bin/env zig run $0 -- $@; exit
